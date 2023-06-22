@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container{
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+        }
+        input{
+            width: 80%;
+            height: 40px;
+            font-size: 24px;
+            text-align: center;
+        }
+        #otpOutput{
+            width: 400px;
+            height: 400px;
+            background-color: cadetblue;
+            display: none;
+            flex-direction:column;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+        }
+        #close{
+            position: absolute;
+            font-size: 30px;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+     <input type="text" id="userVal">
+     <input type="button" value="submit" onclick="accessOtp()">
+    <input type="button" value="Generate OTP"onclick="otpOutput()">
+    <h4 id="Message"></h4>
+</div>
+<div id="otpOutput">
+    <span id="close" onclick="closeWindow()">X</span>
+    <h1 id="otp"></h1>
+</div>
+    <script>
+        var otp;
+        function otpGen()
+        {
+      var num1=Math.trunc(Math.random()*10);   
+      var num2=Math.trunc(Math.random()*10);
+      var num3=Math.trunc(Math.random()*10);
+      var num4=Math.trunc(Math.random()*10); 
+      var otp=`${num1}${num2}${num3}${num4}`
+      return otp
+        }
+        function otpOutput()
+        {
+            otp=otpGen()
+            document.getElementById("otp").innerHTML="otp"
+          document.getElementById("otpOutput").style.display="flex"
+        }
+        function closeWindow()
+        {
+            document.getElementById("otpOutput").style.display="none"
+ 
+        }
+        function accessOtp()
+        {
+            var userGivenOTP=document.getElementById("userVal").value
+            if(userGivenOTP==otp)
+            {
+                document.getElementById("Message").innerHTML="Access Granted"
+                document.getElementById("Message").style.color="green"
+            }
+            else{
+                
+                document.getElementById("Message").innerHTML="Access Denied"
+                document.getElementById("Message").style.color="red"
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+#b{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: blue;
+}
+    button{
+        position: absolute;
+        top: 45%;
+        left: 45%;
+    }
+    @keyframes moveObj{
+      0%{
+        transform: translateX(0px);
+      }
+      25%{
+        transform: translateX(950px);
+      }
+      50%{
+        transform: translate(950px,450px);
+      }
+      75%{
+        transform: translate(0px,450px);
+      }
+      100%{
+        transform: translate(0px,0px);
+      }
+    }
+        
+    
+</style>
+</head>
+<body>
+    <div id="b">
+
+    </div>
+    <button onclick="move()">click Here!</button>
+    <script>
+       function move(){
+       document.getElementById("b").style.animation="moveObj 5s"
+  }
+
+    </script>
+    
+</body>
+</html>

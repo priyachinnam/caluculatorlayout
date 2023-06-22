@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./galleryedit.css">
+    <script src="./galleryedit.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="imgcont">
+            <img id="image" src="./parrot-gb2ee902c6_1280.jpg">
+    </div>
+    <div id="filters">
+              <h4>Blur</h4>
+        <input type="range" id="blur" oninput="editImg()"value="0">
+              <h4>Brightness</h4>
+        <input type="range" id="brightness" oninput="editImg()"value="100" min="0" max="500">
+              <h4>Constrast</h4>
+        <input type="range" id="Constrast" oninput="editImg()" value="100" min="0" max="500">
+               <h4>Grayscale</h4>
+        <input type="range" id="grayscale" oninput="editImg()" min="0" max="500"value="0">
+               <h4>Hue-rotate</h4>
+        <input type="range" id="Hue" oninput="editImg()" min="0" max="360"value="0">
+              <h4>Invert</h4>
+        <input type="range" id="invert" oninput="editImg()"min="0" max="100"value="0"> 
+              <h4>opacity</h4>
+        <input type="range" id="opacity" oninput="editImg()" max="360"value="100" min="0" >
+              <h4>saturate</h4>
+        <input type="range" id="saturate" oninput="editImg()"value="100" min="0" max="500">
+               <h4>sepia</h4>
+        <input type="range" id="sepia" oninput="editImg()"value="0" min="0" max="100">
+    </div>
+    <div id="transform">
+        <h4>RotateZ</h4>
+        <input type="range" id="RotateZ">
+        <h4>RotateX</h4>
+        <input type="range" id="RotateX">
+        <h4>RotateY</h4>
+        <input type="range" id="RotateY">
+        <h4>Scale</h4>
+        <input type="range" id="Scale">
+        <h4>ScaleX</h4>
+        <input type="range" id="ScaleX">
+        <h4>ScaleY</h4>
+        <input type="range" id="ScaleY">
+        <h4>skew</h4>
+        <input type="range" id="skew">
+        <h4>skewX</h4>
+        <input type="range" id="skewX">
+        <h4>skewY</h4>
+        <input type="range" id="skewY">
+    </div>
+    </div>
+    
+</body>
+</html>

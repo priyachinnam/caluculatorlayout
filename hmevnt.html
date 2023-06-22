@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container{
+            width: 300px;
+            height: 40px;
+            background-color:pink;
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px black;
+        }
+        input{
+            width: 30%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            font-size: 26px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+<input type="button" value="-" onclick="dec()">
+<input type="text" value="0" id="inputVal">
+<input type="button" value="+" onclick="inc()" >       
+    </div>
+    <script>
+        var num=0;
+        function inc()
+        {
+            num++;
+            if(num<=30)
+            {
+        document.getElementById("inputVal").value=num;
+            }
+    
+    else{
+        document.getElementById("inputVal").value=30;
+        num=30;
+    }
+    }
+function dec()
+    {
+   num--;
+   if (num>=0)
+{
+    document.getElementById("inputVal").value=num;
+}
+else{
+    document.getElementById("inputVal").value=0;
+    num=0;
+
+}
+
+} 
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body id="b">
+    <input id="a" onfocus="focusoniput()" onblur="nofocusoninput()">
+    <script>
+        function focusoniput()
+        {
+            document.getElementById("a").style.backgroundColor="yellow"
+            document.getElementById("b").style.backgroundImage="radial-gradient(red,blue,red,blue,red,blue,red,blue)"
+        }
+        function nofocusoninput()
+        {
+            document.getElementById("a").style.backgroundColor="yellow"
+            document.getElementById("b").style.backgroundImage="none"
+
+        }
+    </script>
+    
+</body>
+</html>

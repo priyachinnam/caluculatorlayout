@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+           
+        }
+        video{
+            width: 400px;
+            border-radius: 10px;
+            height: 50vh;
+        }
+        .poster{
+            width: 400px;
+            height: 50vh;
+
+        } 
+    </style>
+</head>
+<body>
+    <video poster="../css/squirrel-g600f7614f_1920.jpg" autoplay muted loop>
+
+    </video>
+    <script>
+        var videoTag=document.querySelector("video")
+        videoTag.addEventListener("mouseover",function()
+        {
+          videoTag.setAttribute("src","../css/game-72488 (1).mp4")
+        })
+        videoTag.addEventListener("mouseout",function()
+        {
+videoTag.setAttribute("src","none")
+        })
+    </script>
+    
+</body>
+</html>

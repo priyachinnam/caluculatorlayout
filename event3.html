@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a" oninput="fun()">
+    <h1 id="b"></h1>
+    <script>
+        function fun()
+        {
+            var val=document.getElementById("a").value
+            document.getElementById("b").innerText=val
+        }
+    </script>
+</body>
+</html>

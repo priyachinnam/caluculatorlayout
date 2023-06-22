@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <h1></h1>
+    <h4></h4>
+    <h1></h1>
+    <script>
+       var headingOne=document.getElementsByTagName("h1");
+       console.log(headingOne)
+       headingOne[0].innerHTML="this is 1st heading";
+       headingOne[1].innerHTML="this is 2nd heading";
+       headingOne[2].innerHTML="this is 3rd heading";
+
+       var paragragh=document.getElementsByTagName("p");
+       console.log(paragragh)
+       paragragh[0].innerHTML="this is paragragh"
+       paragragh[0].style.color="red"
+       paragragh[0].style.fontsize="120px"
+
+    </script>
+    
+</body>
+</html>

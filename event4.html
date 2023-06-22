@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Hover here!!!" onmouseover="fun()"
+    onmouseout="notfun()">
+    <h1 id="message"></h1>
+    <script>
+        function fun()
+        {
+            document.getElementById("message").innerHTML="this is the message"
+        }
+        function notfun(){
+            document.getElementById("message").innerHTML=""
+  
+        }
+    </script>
+    
+</body>
+</html>

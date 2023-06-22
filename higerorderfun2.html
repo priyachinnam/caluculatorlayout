@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=prompt("enter the value A");
+        var b=prompt("enter the value B");
+        function add()
+        {
+            return Number(a)+Number(b);
+        }
+        function sub()
+        {
+        return a-b;
+        }
+        function div()
+        {
+        return a/b;
+        }
+        function mod()
+        {
+        return a%b;
+        }
+        function expo()
+        {
+        return a**b;
+        }
+    
+        function multi()
+        {
+        return a*b;
+        }
+        function mainfunction(add,sub,div,mod,expo,multi)
+        {
+            console.log(`addition of ${a} and ${b} is:${add()}`)
+            console.log(`sub of ${a} and ${b} is:${sub()}`)
+            console.log(`div of ${a} and ${b} is:${div()}`)
+            console.log(`mod of ${a} and ${b} is:${mod()}`)
+            console.log(`expo of ${a} and ${b} is:${expo()}`)
+            console.log(`multi of ${a} and ${b} is:${multi()}`)
+
+
+        }
+        mainfunction(add,sub,div,mod,expo,multi)
+
+    </script>
+    
+</body>
+</html>

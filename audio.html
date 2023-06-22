@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="play" onclick="playAudio()">
+    <input type="button" value="pause" onclick="pauseAudio()">
+    <input type="button" value="loop" onclick="loopAudio()">
+<script>
+    var audiofile=new Audio();
+    audiofile.src="./my-universe-147152.mp3"
+function playAudio()
+{
+    audiofile.play();
+}
+function pauseAudio()
+{
+    audiofile.pause();
+}
+function loopAudio()
+{
+    audiofile.loop=Infinity;
+}
+</script>
+</body>
+</html>
